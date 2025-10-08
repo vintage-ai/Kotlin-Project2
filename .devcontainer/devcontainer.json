@@ -1,0 +1,21 @@
+{
+  "name": "Kotlin Development Environment (Pre-Built)",
+  
+  // ベースイメージを、Kotlin/Gradleがプリインストールされた公式イメージに変更
+  "image": "mcr.microsoft.com/devcontainers/kotlin:latest", 
+
+  // Featuresは空にして、一切の追加インストール処理をスキップ
+  "features": {}, 
+
+  // postCreateCommandも空にして、追加の処理を停止
+  "postCreateCommand": "", 
+  
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "fwcd.kotlin",         // Kotlin言語サポート
+        "vscjava.vscode-gradle" // Gradleファイルのサポート
+      ]
+    }
+  }
+}
